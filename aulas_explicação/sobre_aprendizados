@@ -1,0 +1,10 @@
+npm uninstall moment 
+
+npm uninstall -g
+
+npm i (install) --g   == install global
+
+npm init == in this case is an npm package create
+
+gitignore == don't show xxx things (i select)
+
