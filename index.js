@@ -12,7 +12,11 @@ const ask = ( index = 0 )  => {
 
 ask()
 //data = toda vez que tiver algum dado, informação, ele irá receber. data => basicamente é o que ele vai fazer com os dados
+const answers = []
 process.stdin.on("data", data => {
-process.stdout.write( data.toString().trim() + '\n')
+ answers.push( data.toString().trim())
+ if(answers.length < questions.length ){
+    ask(answers.length)
+ }
 process.exit()
 } )
